@@ -1,0 +1,26 @@
+.currentRep {
+	width: 400px;
+	display: inline-block;
+	margin-left: 32px;
+}
+
+.header {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.detail {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px 8px;
+}
+
+.key {
+	font-size: 18px;
+	color: #AAA;
+}
+
+.value {
+	font-size: 16px;
+	width: 175px;
+}

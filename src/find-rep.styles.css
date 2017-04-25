@@ -1,0 +1,9 @@
+:global(.blue) {
+	color: #1099DD;
+}
+:global(*) {
+	font-family: sans-serif;
+}
+
+.findMyRep {
+}

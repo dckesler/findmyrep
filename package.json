@@ -1,0 +1,53 @@
+{
+  "name": "findmyrep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged && npm run test-frontend",
+    "test-frontend": "jest --config jest.json",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js -w",
+    "start": "nodemon index.js",
+    "prettier": "prettier --single-quote --trailing-comma=es5 --use-tabs --write src/*/**.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run prettier",
+      "git add"
+    ]
+  },
+  "author": "Dan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "request": "^2.81.0",
+    "rx": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "enzyme": "^2.8.2",
+    "husky": "^0.13.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.2",
+    "jest-css-modules": "^1.1.0",
+    "lint-staged": "^3.4.0",
+    "nodemon": "^1.11.0",
+    "postcss-loader": "^1.3.3",
+    "prettier": "^1.2.2",
+    "react-addons-test-utils": "^15.5.1",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  }
+}

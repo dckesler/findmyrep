@@ -1,0 +1,13 @@
+{
+	"coveragePathIgnorePatterns": ["<roorDir>/node_modules"],
+	"collectCoverageFrom": ["src/**/*.js"],
+	"transform": {".*": "./node_modules/babel-jest"},
+	"testRegex": "<rootDir>/src/.*\\.test\\.js$",
+	"rootDir": "./",
+	"modulePaths": ["./"],
+	"moduleNameMapper": {
+		"axios": "<rootDir>/__mocks__/axios.mock.js",
+		"rx": "<rootDir>/__mocks__/rx.mock.js",
+		"^.+\\.(css|scss)$": "identity-obj-proxy"
+	}
+}
